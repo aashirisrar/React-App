@@ -1,15 +1,21 @@
 import React, { Component } from "react";
+import image from "../img.jpg";
 
 class Counter extends Component {
   render() {
     return (
       <div>
+        <img
+          src={image}
+          alt="t-shirts"
+          className="figure-img img-fluid rounded"
+        />
         <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
         <button
           onClick={() => {
             this.props.onIncrement(this.props.counter);
           }}
-          className="btn btn-secondary btn-sm"
+          className="btn btn-secondary btn-sm "
         >
           Increment
         </button>

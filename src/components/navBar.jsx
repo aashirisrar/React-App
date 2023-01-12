@@ -5,7 +5,7 @@ class NavBar extends Component {
     return (
       <nav className="navbar navbar-light bg-light h1 ">
         <a className="navbar-brand" href="#">
-          Shopping Cart{" "}
+          🛒 Shopping Cart{" "}
           <span className="badge badge-pill badge-secondary">
             {this.props.totalCounters}
           </span>
